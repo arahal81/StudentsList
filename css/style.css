@@ -1,0 +1,99 @@
+
+h3{
+    
+    display: inline-block;
+    color: #eee;
+    font-size: 1.5rem;
+    margin-left: 45rem;
+    
+}
+nav ul{
+  
+ 
+  margin-left: 70rem;
+    
+}
+nav ul li{
+      display: inline-block;
+       color: #eee;
+    margin-top: -2rem;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+body{
+    background-image: url(../bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+input[type="text"],select
+{
+    margin: 0.2rem;
+    width: 11rem;
+    padding: 0.3rem;
+    display: block;
+}
+label{
+    color: #eee;
+    margin: 0.2rem;
+    padding: 0.3rem;
+    display: block;
+    
+}
+table{
+    width: 24rem;
+    color: #eee;
+   
+    
+}
+h4{
+    color: #eee;
+    
+}
+
+td{
+    border: #eee solid 0.02rem ;
+    max-width: max-content;
+    padding: 0.2rem;
+    text-align: center ;
+}
+th{
+       border  : #eee solid 0.02rem ;
+       
+    max-width: max-content;
+    padding: 0.2rem; 
+    text-align: center ;
+}
+#tableDiv{
+    text-align: center;
+float: left;
+margin: 2rem;
+padding: 2rem;
+width: auto;
+  background-color:rgba(96,96,96,0.6);
+}
+.trans{
+     float: left;
+    
+
+
+width: 30rem;
+  background-color:rgba(96,96,96,0.6);
+
+  
+
+}
+.form{
+    display: inline-block;
+    text-align: left;
+    margin-left: 2rem;
+    
+}
+#form{
+    text-align: center;
+}
+#btn{
+    margin-top: 1rem;
+    width: 15rem;
+}

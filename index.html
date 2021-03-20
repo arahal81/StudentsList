@@ -4,42 +4,56 @@
 <head>
 
     <title>Students list</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+<br>
+<br>
 
 <body>
     <header>
-        <h3>ASAC</h3>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>contact</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
         <div>
-            <form action="" id="form">
-                <label for="">Student Email</label>
-                <input type="text" id="email">
-                <br>
-                <label for="">Student Mobile Number</label>
-                <input type="text" id="phone">
-                <br>
-                <label for="">tuition</label>
-                <select name="" id="fee">
-                    <option value="100">100 JD</option>
-                    <option value="500">500 JD</option>
-                    <option value="1000">1000 JD</option>
-                </select>
-                <input type="submit">
-            </form>
+            <h3>ASAC</h3>
         </div>
         <div>
-            <table id="tableData">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>contact</li>
+                </ul>
+            </nav>
+        </div>
 
+    </header>
+    <main>
+        <div class="trans">
+            <form action="" id="form">
+                <div class="form">
+                    <label for="">Student Email</label>
+                    <br>
+                    <label for="">Student Mobile Number</label>
+                    <br>
+                    <label for="">tuition</label>
+                </div>
+                <div class="form">
+                    <input type="text" id="email">
+                    <br>
 
-            </table>
+                    <input type="text" id="phone">
+                    <br>
+
+                    <select name="" id="fee">
+                        <option value="100">100 JD</option>
+                        <option value="500">500 JD</option>
+                        <option value="1000">1000 JD</option>
+                    </select>
+                </div>
+                <br>
+                <input type="submit" id="btn">
+            </form>
+        </div>
+        <div id="tableDiv">
         </div>
     </main>
     <footer>
