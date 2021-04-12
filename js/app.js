@@ -57,7 +57,7 @@ function submitStudentForm(event) {
 renderTable()
 
 function renderTable() {
-
+ Student.prototype.getLocalStorage();
     for (let i in Student.sL) {
         let tr = document.createElement('tr');
         table.appendChild(tr);
