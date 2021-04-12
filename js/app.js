@@ -57,6 +57,28 @@ function submitStudentForm(event) {
 renderTable()
 
 function renderTable() {
+     let table = document.createElement('table');
+    tableDiv.appendChild(table);
+    let trH = document.createElement('tr');
+    table.appendChild(trH);
+    let thId = document.createElement('th');
+    trH.appendChild(thId);
+    thId.textContent = "Id";
+    let thName = document.createElement('th');
+    trH.appendChild(thName);
+    thName.textContent = "Name";
+    let thEmail = document.createElement('th');
+    trH.appendChild(thEmail);
+    thEmail.textContent = "Email";
+    let thMobile = document.createElement('th');
+    trH.appendChild(thMobile);
+    thMobile.textContent = "Mobile";
+    let thAge = document.createElement('th');
+    trH.appendChild(thAge);
+    thAge.textContent = "Age";
+    let thTuition = document.createElement('th');
+    trH.appendChild(thTuition);
+    thTuition.textContent = "Tuition";
  Student.prototype.getLocalStorage();
     for (let i in Student.sL) {
         let tr = document.createElement('tr');
