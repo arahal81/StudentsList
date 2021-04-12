@@ -11,9 +11,6 @@ function Student(name, email, phone, age, tuition, id) {
     Student.sL.push(this);
 }
 
-
-
-
 function total(params) {
     let tot = 0;
     for (let i in Student.sL) {
@@ -22,16 +19,6 @@ function total(params) {
     }
     return tot;
 }
-/*
-const StudentsList = function (stL) {
-    this.sL = stL;
-
-}
-StudentsList.prototype.add = function (st) {
-    this.sL.push(st);
-}
-
-*/
 
 Student.prototype.SetLocalStorage = function () {
     localStorage.setItem('students', JSON.stringify(Student.sL));
@@ -41,7 +28,6 @@ Student.prototype.getLocalStorage = function () {
     if (temp !== null) {
         Student.sL = temp;
     }
-
 
 }
 
@@ -63,12 +49,8 @@ function submitStudentForm(event) {
     if (Student.sL.length === 0) {
         id = 1;
     } else { id = Student.sL.length + 1 }
-
     new Student(name, email, phone, age, tuition, id);
-    // console.log(students);
     Student.prototype.SetLocalStorage();
-    //StudentsList.prototype.add(sTemp);
-
     renderTable()
     form.reset();
 }
@@ -76,51 +58,18 @@ renderTable()
 
 function renderTable() {
 
-    Student.prototype.getLocalStorage();
-    tableDiv.innerHTML = "";
-    let table = document.createElement('table');
-    tableDiv.appendChild(table);
-    let trH = document.createElement('tr');
-    table.appendChild(trH);
-    let thId = document.createElement('th');
-    trH.appendChild(thId);
-    thId.textContent = "Id";
-    let thName = document.createElement('th');
-    trH.appendChild(thName);
-    thName.textContent = "Name";
-    let thEmail = document.createElement('th');
-    trH.appendChild(thEmail);
-    thEmail.textContent = "Email";
-
-
-    let thMobile = document.createElement('th');
-    trH.appendChild(thMobile);
-    thMobile.textContent = "Mobile";
-    let thAge = document.createElement('th');
-    trH.appendChild(thAge);
-    thAge.textContent = "Age";
-    let thTuition = document.createElement('th');
-    trH.appendChild(thTuition);
-    thTuition.textContent = "Tuition";
-
     for (let i in Student.sL) {
-
         let tr = document.createElement('tr');
         table.appendChild(tr);
         let tdID = document.createElement('td');
         tr.appendChild(tdID)
-        //console.log(students);
         tdID.textContent = Student.sL[i].id;
-
         let tdName = document.createElement('td');
         tr.appendChild(tdName)
         tdName.textContent = Student.sL[i].name;
-
-
         let tdEmail = document.createElement('td');
         tr.appendChild(tdEmail)
         tdEmail.textContent = Student.sL[i].email;
-
         let tdMoblie = document.createElement('td');
         tr.appendChild(tdMoblie)
         tdMoblie.textContent = Student.sL[i].phone;
