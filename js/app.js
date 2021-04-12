@@ -1,6 +1,6 @@
 `use strict`;
 Student.sL = [];
-let tableDiv = document.getElementById('tableDiv');
+let tableDiv = document.getElementById('studentTable');
 function Student(name, email, phone, age, tuition, id) {
     this.id = id;
     this.name = name;
