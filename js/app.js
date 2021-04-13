@@ -1,6 +1,6 @@
 `use strict`;
 Student.sL = [];
-let tableDiv = document.getElementById('studentTable');
+let studentTable = document.getElementById('studentTable');
 let total1 = document.getElementById('total');
 function Student(name, email, phone, age, tuition, id) {
     this.id = id;
@@ -55,12 +55,12 @@ function submitStudentForm(event) {
 renderTable()
 
 function renderTable() {
-     let table = document.createElement('table');
+    
 
  Student.prototype.getLocalStorage();
     for (let i in Student.sL) {
         let tr = document.createElement('tr');
-        table.appendChild(tr);
+        studentTable.appendChild(tr);
         let tdID = document.createElement('td');
         tr.appendChild(tdID)
         tdID.textContent = Student.sL[i].id;
