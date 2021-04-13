@@ -1,6 +1,7 @@
 `use strict`;
 Student.sL = [];
 let tableDiv = document.getElementById('studentTable');
+let total = document.getElementById('total');
 function Student(name, email, phone, age, tuition, id) {
     this.id = id;
     this.name = name;
@@ -83,9 +84,7 @@ function renderTable() {
         tdTuition.textContent = Student.sL[i].tuition
     }
     let tot = total();
-    let h4 = document.createElement('h4');
-    tableDiv.appendChild(h4);
-    h4.textContent = `Total: ${tot}`;
+    total.textContent = tot;
 }
 
 
