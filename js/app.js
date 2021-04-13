@@ -20,7 +20,6 @@ function total(params) {
     }
     return tot;
 }
-
 Student.prototype.SetLocalStorage = function () {
     localStorage.setItem('students', JSON.stringify(Student.sL));
 }
@@ -29,9 +28,7 @@ Student.prototype.getLocalStorage = function () {
     if (temp !== null) {
         Student.sL = temp;
     }
-
 }
-
 
 function randumAge() {
     return Math.floor(Math.random() * (24 - 18) + 18);
@@ -86,5 +83,3 @@ function renderTable() {
     let tot = total();
     total.textContent = tot;
 }
-
-
